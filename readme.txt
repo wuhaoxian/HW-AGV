@@ -1,0 +1,27 @@
+- bin 可执行目录
+	-- log 日志文件
+	-- map 地图文件，定位地图、导航地图等
+	-- params 参数文件  AGV配置参数，log4cxx,log4cpp配置参数
+	-- qml qt资源文件
+	-- trained 视觉训练结果
+- doc 文档
+- include 依赖头文件
+- lib 依赖库
+- src 源码
+	--app 各功能模块
+		--- HwAGV_V2.0.sln 软件整体sln文件
+		--- NR-2dLogger 地图数据采集模块，生成2d文件
+		--- NR-FoundationLib 基础库，模块依赖的基础函数
+		--- NR-HandleAddPoint 手动添加工位点模块
+		--- NR-Localization 自定位模块
+		--- NR-Mapper 地图构建模块
+		--- NR-Master GUI交互界面，下发控制指令，显示信息
+		--- NR-Mecanum 底盘控制模块。负责运动分解，里程计合成
+		--- NR-MiddleWare 中间件。负责服务器交互，决策层
+		--- NR-MobileClient MobileSim仿真平台。
+		--- NR-Navigation 导航模块。
+		--- NR-SickLaserCapture 激光采集模块 SICK LMS100
+		--- NR-Test	测试代码
+		--- serial_driver_V2.0 串口驱动模块
+	--lib 程序中内嵌的第三方库的源码
+- third_party_lib 第三方依赖库
